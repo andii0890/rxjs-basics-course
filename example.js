@@ -1,4 +1,4 @@
-const rxjs = require('rxjs')
+const { Observable }= require('rxjs')
 
 // Import
 // import { Observable } from 'rxjs';
@@ -23,4 +23,8 @@ const observable = new Observable(subscriber => {
 
 });
 
-observable.subscribe(observer);
+observable.subscribe(
+	value => console.log ('next', value),
+	null,
+	() => console.log('complete!')
+	);
