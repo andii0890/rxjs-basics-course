@@ -15,4 +15,4 @@ input$.pipe(
 	debounce(()=> interval(1000)),
 	pluck('target', 'value'),
 	distinctUntilChanged()
-	// ).subscribe(console.log);
+	).subscribe(console.log);
