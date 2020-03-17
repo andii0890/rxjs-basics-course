@@ -1,4 +1,4 @@
-const { of } = require('rxjs');
+const { fromEvent } = require('rxjs');
 const { take, map, first } = require('rxjs/operators');
 
 const numbers$ = of(1,2,3,4,5);
