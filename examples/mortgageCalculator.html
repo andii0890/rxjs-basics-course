@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ultimate RxJS</title>
+</head>
+<body>
+	<div id='app'>
+		<div class="calculator-wrapper">
+				<label for="loanAmount">
+					Mortgage Amount ($)
+				</label>
+				<input 
+					type="number"
+					name="loanAmount"
+					id="loanAmount">
+
+			<div class="form-wrapper">
+				<label for="interest">
+					Interest Rate ($)
+				</label>
+				<input 
+					type="number"
+					name="interest"
+					id="interest"
+				>
+
+				<div class="form-wrapper">
+					<label for="loanLength">Mortgage Length</label>
+					<div>
+						<input 
+							type="radio"
+							name="loanLength"
+							class="loanLength"
+							value="180"> 15 yr
+						<input 
+							type="radio"
+							name="loanLength"
+							class="loanLength"
+							value="360"> 30 yr
+					</div>
+				</div>
+				<div>
+					Your expected monthly payment is:
+					$<strong id="expected"></strong>
+				</div>
+			</div>		
+	</div>
+	<script src="mortgageCalculator.js"></script>
+	<script src="style.css"></script>
+	
+</body>
+</html>
